@@ -18,7 +18,7 @@
 }
 .top_layer {
   margin: 0;
-  background-image: linear-gradient(brown);
+  background-color: brown;
   width: auto;
   height: 120px;
 }
