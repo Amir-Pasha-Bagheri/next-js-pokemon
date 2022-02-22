@@ -1,0 +1,11 @@
+In api folder will not be shown in client server
+
+We write functions here and they only execute when ever
+we call them
+
+How to call ==> .../api/ {file name inside api folder}
+
+This functions work just like i did in express js and node js
+
+We can access to req and res in params() and 
+we must export the function
