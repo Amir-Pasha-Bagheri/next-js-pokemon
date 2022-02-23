@@ -16,7 +16,7 @@ export default function Home() {
       <div className={classes.welcome}></div>
       <div className={classes.bottom_layer}></div>
 
-      <Link href="/pokemon?limit=100&offset=0">
+      <Link href="/pokemon?offset=0&limit=20">
         <button className={classes.link_go_pokemon}>Go to Pokemons !!!</button>
       </Link>
     </div>

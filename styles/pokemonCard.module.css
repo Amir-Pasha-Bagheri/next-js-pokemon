@@ -1,0 +1,74 @@
+.card_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.card {
+  background-color: burlywood;
+  border-radius: 5px;
+  font-size: larger;
+  padding: 1rem;
+  margin: 10px;
+  flex-grow: 5;
+  text-align: center;
+}
+.card button {
+  margin-top: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 0.5rem;
+  background-color: brown;
+  transition: 0.3s background-color;
+  color: antiquewhite;
+  user-select: none;
+}
+.card button:hover {
+  background-color: rgb(75, 20, 20);
+}
+.change_cards_button_right {
+  border: none;
+  padding: 0.7rem 1.5rem;
+  width: 30%;
+
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s background-color;
+  position: absolute;
+  right: 30px;
+}
+.change_cards_button_left {
+  border: none;
+  padding: 0.7rem 1.5rem;
+  width: 30%;
+
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s background-color;
+  position: absolute;
+  left: 30px;
+}
+.change_cards_button_left:disabled,
+.change_cards_button_right:disabled {
+  cursor: default;
+}
+.change_cards_button_left:hover,
+.change_cards_button_right:hover {
+  background-color: gray;
+}
+.offset_input,
+.limit_input {
+  position: absolute;
+  width: 20%;
+  right: 50%;
+  transform: translate(50%);
+  border: none;
+  background-color: aliceblue;
+  padding: 0.7rem 1.5rem;
+}
+.limit_input {
+  margin-top: 50px;
+}
