@@ -30,7 +30,7 @@
 }
 .link_go_pokemon {
   border: none;
-  position: fixed;
+  position: absolute;
   padding: 1rem;
   border-radius: 5px;
   background-color: rgba(165, 42, 42, 0.801);
