@@ -10,6 +10,10 @@ export default function Pokemons(props) {
   const [limit, setLimit] = useState(parseInt(router.query.limit));
 
   useEffect(() => {
+    if (isNaN(offset) || isNaN(limit)) {
+      setOffset(20);
+      setLimit(20);
+    }
     if (!router.query.offset) router.replace("/pokemon?offset=0&limit=20");
   });
 

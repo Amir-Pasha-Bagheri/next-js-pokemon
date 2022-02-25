@@ -10,7 +10,6 @@ moves [{}.{}]
 */
 
 export default function PokemonInformation({ data, classname }) {
-  console.log(data.abilities);
   return (
     <div className={classname}>
       <header title="Pokemon name">
