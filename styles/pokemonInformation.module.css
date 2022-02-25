@@ -129,3 +129,19 @@
   text-align: center;
   flex-grow: 2;
 }
+.moves_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.move_span {
+  margin: 3vh 25px 0px 25px;
+  padding: 0.5rem;
+  list-style-type: none;
+  background-color: brown;
+  color: whitesmoke;
+  border-radius: 5px;
+  font-size: large;
+  text-align: center;
+  flex-grow: 2;
+}

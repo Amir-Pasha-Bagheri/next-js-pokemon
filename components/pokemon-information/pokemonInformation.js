@@ -7,7 +7,6 @@ weight
 types [{},{}]
 abilities [{}.{}]
 moves [{}.{}]
-forms [{}.{}]
 */
 
 export default function PokemonInformation({ data, classname }) {
@@ -40,6 +39,21 @@ export default function PokemonInformation({ data, classname }) {
           </span>
         ))}
       </div>
+
+      <details className={classes.moves}>
+        <summary className={classes.title_span}>Moves :</summary>
+        <ul className={classes.moves_container}>
+          {data.moves.map((move) => (
+            <li
+              key={move.move.name}
+              className={classes.move_span}
+              title="The move"
+            >
+              {move.move.name}
+            </li>
+          ))}
+        </ul>
+      </details>
     </div>
   );
 }
