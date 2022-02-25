@@ -1,0 +1,131 @@
+.loading {
+  font-size: x-large;
+  position: absolute;
+  bottom: 50%;
+  right: 50%;
+  transform: translate(50%);
+  width: auto;
+  background-color: beige;
+  border-radius: 5px;
+  padding: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+  user-select: none;
+}
+.loading:hover {
+  word-spacing: 40px;
+  padding: 10px 1.5rem;
+  background-color: rgba(150, 57, 57, 0.678);
+}
+.error {
+  background-color: beige;
+  padding: 2rem;
+  border-radius: 10px;
+  width: auto;
+  position: absolute;
+  right: 50%;
+  transform: translate(50%);
+  bottom: 50%;
+}
+.error h2 {
+  transition: 0.2s color;
+}
+.error h2:hover {
+  color: brown;
+}
+.error p {
+  font-size: large;
+  margin-top: 40px;
+}
+.error form {
+  display: flex;
+  flex-direction: row;
+}
+.error form input {
+  border: none;
+  outline: none;
+  padding: 1rem;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  transition: 0.3s background-color;
+}
+.error form input:focus {
+  background-color: rgb(230, 230, 230);
+}
+.error form button {
+  border: none;
+  cursor: pointer;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  transition: 0.3s background-color;
+  flex-shrink: 0;
+}
+.error form button:hover {
+  background-color: gray;
+}
+.information {
+  width: 90%;
+  margin: 8vh 5%;
+  padding: 2rem 0;
+  border-radius: 5px;
+  background-color: rgb(231, 230, 209);
+  display: flex;
+  flex-direction: column;
+  cursor: default;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 3px solid rgba(190, 190, 190, 0.74);
+  border-bottom: 3px solid rgba(190, 190, 190, 0.74);
+}
+.information div {
+  display: flex;
+  flex-direction: row;
+}
+.information header {
+  font-size: xx-large;
+  margin: 0 auto;
+}
+.information header sub {
+  margin-left: 10px;
+  font-size: 17px;
+  color: brown;
+}
+.title_span {
+  padding: 0.5rem;
+  margin: 3vh 10% 0px 10%;
+  font-size: large;
+  color: rgb(60, 101, 102);
+  transition: 0.3s background-color;
+  border-radius: 5px;
+}
+.title_span:hover {
+  background-color: rgb(219, 219, 185);
+}
+.types {
+  flex-wrap: wrap;
+}
+.type_span {
+  margin: 3vh 25px 0px 25px;
+  padding: 0.5rem;
+  background-color: green;
+  color: whitesmoke;
+  border-radius: 5px;
+  font-size: large;
+  align-self: center;
+  text-align: center;
+  flex-grow: 2;
+}
+.abilities {
+  flex-wrap: wrap;
+}
+.ability_span {
+  margin: 3vh 25px 0px 25px;
+  padding: 0.5rem;
+  background-color: brown;
+  color: whitesmoke;
+  border-radius: 5px;
+  font-size: large;
+  align-self: center;
+  text-align: center;
+  flex-grow: 2;
+}
